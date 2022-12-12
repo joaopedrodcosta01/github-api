@@ -28,7 +28,7 @@ const Repositories = () => {
                 <S.WrapperTabPanel>
                     <S.WrapperList>
                         {githubState.repositories.map((item) => (
-                            <RepositoryItem key={item.id} name={item.name} linkToRepo={item.full_name} fullName={item.full_name} />
+                            <RepositoryItem key={item.id} name={item.name} linkToRepo={"https://github.com/"+item.full_name} fullName={item.full_name} />
                         ))}
                     </S.WrapperList>
                 </S.WrapperTabPanel>
